@@ -5,9 +5,8 @@
 }
 
 body{
-    background-color: #FFFFE3;
     color: #000000;
-    font-family: 'Bonny', sans-serif;
+    font-family: 'Cabinet Grotesk', sans-serif;
     padding: 20px;
 }
 
@@ -24,6 +23,10 @@ main h1{
 a{
     text-decoration: none;
     color: #000000;
+}
+
+p{
+    margin-top: 5px;
 }
 
 .projects{
