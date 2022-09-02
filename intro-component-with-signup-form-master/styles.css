@@ -83,6 +83,9 @@ input{
     border: 1px solid rgba(62, 60, 73, 0.2);
     box-shadow: none;
     font-weight: 700;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input:focus{
@@ -101,6 +104,25 @@ input:focus{
     font-weight: 700;
 }
 
+input.error{
+    border: 1px solid red;
+}
+
+input.error::placeholder{
+    color: transparent;
+}
+
+p#error{
+    display: none;
+    text-align: right;
+    font-size: .75rem;
+    color: red;
+}
+
+p#error.show{
+    display: block;
+}
+
 button{
     margin: 8px auto;
     background-color: var(--main-green);
@@ -116,8 +138,9 @@ button{
     border-radius: 5px;
 }
 
-button::hover{
+button:hover{
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .agreement{

@@ -21,14 +21,34 @@
       <p class="trial"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
 
     <form>
-      <input placeholder="First Name"/>
-      <input placeholder="Last Name"/>
-      <input placeholder="Email Address"/>
-      <input placeholder="Password"/>
-      <button>Claim your free trail</button>
+      <input id="fname" placeholder="First Name" type="text"/>
+      <p id="error">hey</p>
+      <input id="lname" placeholder="Last Name" type="text"/>
+      <input id="email" placeholder="Email Address" type="email"/>
+      <input id="password" placeholder="Password" type="password"/>
+      <button onclick="myFunction()">Claim your free trail</button>
       <p class="agreement">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
     </form>
   </section>
     </main>
+
+    <script>
+      function myFunction() {
+        event.preventDefault()
+        console.log("running")
+        const fname = document.getElementById("fname");
+        const lname = document.getElementById("lname");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        console.log(fname.checkValidity())
+        if (fname.checkValidity()) {
+          console.log("error")
+          fname.classList.add('error')
+          document.getElementById("error").innerHTML = 'First Name cannnot be empty';
+        } else {
+          // document.getElementById("error").innerHTML = "Input OK";
+        } 
+      } 
+    </script>
 </body>
 </html>
