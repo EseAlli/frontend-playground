@@ -20,35 +20,26 @@
     <section>
       <p class="trial"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
 
-    <form>
-      <input id="fname" placeholder="First Name" type="text"/>
+    <form id="login-form" action="./" method="post">
+      <input id="fname" placeholder="First Name" type="text" required/>
       <p id="error">hey</p>
-      <input id="lname" placeholder="Last Name" type="text"/>
-      <input id="email" placeholder="Email Address" type="email"/>
-      <input id="password" placeholder="Password" type="password"/>
-      <button onclick="myFunction()">Claim your free trail</button>
+      <input id="lname" placeholder="Last Name" type="text" required/>
+      <input id="email" placeholder="Email Address" type="email" required/>
+      <input id="password" placeholder="Password" type="password" required/>
+      <button type="submit">Claim your free trail</button>
       <p class="agreement">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
     </form>
   </section>
     </main>
 
     <script>
-      function myFunction() {
-        event.preventDefault()
-        console.log("running")
-        const fname = document.getElementById("fname");
-        const lname = document.getElementById("lname");
-        const email = document.getElementById("email");
-        const password = document.getElementById("password");
-        console.log(fname.checkValidity())
-        if (fname.checkValidity()) {
-          console.log("error")
-          fname.classList.add('error')
-          document.getElementById("error").innerHTML = 'First Name cannnot be empty';
-        } else {
-          // document.getElementById("error").innerHTML = "Input OK";
-        } 
-      } 
+      const loginForm = document.getElementById('login-form');
+      loginForm.noValidate = true;
+      loginForm.addEventListener('submit', validateForm);
+
+      function validateForm(){
+        console.log("ji")
+      }
     </script>
 </body>
 </html>
