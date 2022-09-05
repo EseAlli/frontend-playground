@@ -1,76 +1,76 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    color: #000000;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    padding: 20px;
+body {
+  color: #000000;
+  font-family: "Cabinet Grotesk", sans-serif;
+  padding: 20px;
 }
 
-main{
-    text-align: center;
-    margin: 20px 10px 0px 10px;
-    padding: 15px 10px 15px 10px;
+main {
+  text-align: center;
+  margin: 20px 10px 0px 10px;
+  padding: 15px 10px 15px 10px;
 }
 
-main h1{
-    text-transform: uppercase;
+main h1 {
+  text-transform: uppercase;
 }
 
-a{
-    text-decoration: none;
-    color: #000000;
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
-p{
-    margin-top: 5px;
+p {
+  margin-top: 5px;
 }
 
-.projects{
-    margin: 35px 20px;
-    padding: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px
+.projects {
+  margin: 35px 20px;
+  padding: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .projects article {
-    border: 1px solid black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
-    height: 150px;
-    color: black;
-    background-color: transparent;
-    padding: 15px 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  height: 150px;
+  color: black;
+  background-color: transparent;
+  padding: 15px 20px;
 }
 
-.projects article:hover{
-    cursor: pointer;
-    background-color: black;
-    color: white;
+.projects article:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
-.projects article:hover a{
-    color: white;
+.projects article:hover a {
+  color: white;
 }
 
 @media (max-width: 600px) {
-    body{
-        padding: 2px;
-        text-align: left;
-    }
-    main {
-        margin: 10px;
-        padding: auto;
-    }
-    .projects{
-        margin: 20px auto;
-        padding: 10px auto;
-        grid-template-columns: auto;
-    }
+  body {
+    padding: 2px;
+    text-align: left;
+  }
+  main {
+    margin: 10px;
+    padding: auto;
+  }
+  .projects {
+    margin: 20px auto;
+    padding: 10px auto;
+    grid-template-columns: auto;
+  }
 }

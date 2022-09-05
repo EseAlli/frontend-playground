@@ -1,119 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    display: grid;
-    height: 100vh;
-    align-items: center;
-    justify-items: center;
-    font-family: 'Lexend Deca', sans-serif;
+body {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  font-family: "Lexend Deca", sans-serif;
 }
 
-main{
-    width: 100%;
-    margin: 50px auto;
-    padding: 40px 15px;
+main {
+  width: 100%;
+  margin: 50px auto;
+  padding: 40px 15px;
 }
 
-main div{
-    padding: 25px 30px;
-    color: #fff;
+main div {
+  padding: 25px 30px;
+  color: #fff;
 }
 
-main h2{
-    text-transform: uppercase;
-    margin: 25px auto;
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
-    color: hsl(0, 0%, 95%);
+main h2 {
+  text-transform: uppercase;
+  margin: 25px auto;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
 }
 
-main button{
-    inline-size: 50%;
-    padding: 12px 15px;
-    border-radius: 25px;
-    border: transparent;
-    margin: 30px auto;
-    font-weight: 700;
+main button {
+  inline-size: 50%;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: transparent;
+  margin: 30px auto;
+  font-weight: 700;
 }
 
-main button:hover{
-    background-color: transparent;
-    color: hsl(0, 0%, 95%);
-    border: 1px solid white;
-    cursor: pointer;
+main button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+  cursor: pointer;
 }
 
-main p{
-    color: hsla(0, 0%, 100%, 0.75);
-    font-size: 15px;
-    line-height: 24px;
+main p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 24px;
 }
 
-
-.sedans{
-    background-color:  hsl(31, 77%, 52%);
-    border-radius: 8px 8px 0px 0px;
-    border: transparent;
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0px 0px;
+  border: transparent;
 }
 
-.sedans button{
-    color:  hsl(31, 77%, 52%);
+.sedans button {
+  color: hsl(31, 77%, 52%);
 }
 
-.suvs{
-    background-color: hsl(184, 100%, 22%);
+.suvs {
+  background-color: hsl(184, 100%, 22%);
 }
 
-.suvs button{
-    color: hsl(184, 100%, 22%);
+.suvs button {
+  color: hsl(184, 100%, 22%);
 }
 
-.luxury{
-    background-color: hsl(179, 100%, 13%) ;
-    border-radius: 0px 0px 8px 8px;
-
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 0px 8px 8px;
 }
 
-.luxury button{
-    color: hsl(179, 100%, 13%);
+.luxury button {
+  color: hsl(179, 100%, 13%);
 }
 
 @media (min-width: 768px) {
-    main{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 900px;
-        margin: auto;
-    }
-    main button{
-        inline-size: 55%;
-        margin-top: 50%;
-    }
-    main div{
-        padding: 25px 30px;
-        height: 450px;
-        color: #fff;
-    }
-    .sedans{
-        background-color:  hsl(31, 77%, 52%);
-        border-radius: 8px 0px 0px 8px;
-        border: transparent;
-    }
-    
-    .suvs{
-        background-color: hsl(184, 100%, 22%);
-    }
-    
-    .luxury{
-        background-color: hsl(179, 100%, 13%) ;
-        border-radius: 0px 8px 8px 0px;
-    }
-       
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+    margin: auto;
+  }
+  main button {
+    inline-size: 55%;
+    margin-top: 50%;
+  }
+  main div {
+    padding: 25px 30px;
+    height: 450px;
+    color: #fff;
+  }
+  .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0px 0px 8px;
+    border: transparent;
+  }
+
+  .suvs {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 8px 8px 0px;
+  }
 }
-
-

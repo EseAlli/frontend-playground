@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Frontend Mentor | Intro component with sign up form</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
     <main>
       <header>
         <h1>Learn to code by watching others</h1>
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-        but understanding how developers think is invaluable.</p>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
       </header>
 
+      <section>
+        <p class="trial">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
 
-    <section>
-      <p class="trial"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
-
-    <form id="login-form" action="./" method="post">
-      <input id="fname" placeholder="First Name" type="text" required/>
-      <p id="error">hey</p>
-      <input id="lname" placeholder="Last Name" type="text" required/>
-      <input id="email" placeholder="Email Address" type="email" required/>
-      <input id="password" placeholder="Password" type="password" required/>
-      <button type="submit">Claim your free trail</button>
-      <p class="agreement">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-    </form>
-  </section>
+        <form id="login-form" action="./" method="post">
+          <input id="fname" placeholder="First Name" type="text" required />
+          <p id="error">hey</p>
+          <input id="lname" placeholder="Last Name" type="text" required />
+          <input id="email" placeholder="Email Address" type="email" required />
+          <input
+            id="password"
+            placeholder="Password"
+            type="password"
+            required
+          />
+          <button type="submit">Claim your free trial</button>
+          <p class="agreement">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </section>
     </main>
 
     <script>
-      const loginForm = document.getElementById('login-form');
+      const loginForm = document.getElementById("login-form");
       loginForm.noValidate = true;
-      loginForm.addEventListener('submit', validateForm);
+      loginForm.addEventListener("submit", validateForm);
 
-      function validateForm(){
-        console.log("ji")
+      function validateForm() {
+        console.log("ji");
       }
     </script>
-</body>
+  </body>
 </html>
