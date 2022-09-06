@@ -93,9 +93,8 @@
         const arrLen = inputArr.length;
 
         for (let i = 0; i < arrLen; i++) {
-          console.log(inputArr[i].name);
-          if (inputArr[i].value === "") {
-            let errorTag = inputArr[i].nextElementSibling;
+          let errorTag = inputArr[i].nextElementSibling;
+          if (!inputArr[i].checkValidity()) {
             if (inputArr[i].name !== "email") {
               errorTag.innerHTML = `${inputArr[i].placeholder} cannot be empty`;
             } else {
@@ -104,8 +103,12 @@
             }
             inputArr[i].classList.add("error");
             errorTag.classList.add("show");
+          } else {
+            inputArr[i].classList.remove("error");
+            errorTag.classList.remove("show");
           }
         }
+        loginForm.checkValidity() && loginForm.submit();
       }
     </script>
   </body>
