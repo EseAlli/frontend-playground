@@ -183,11 +183,9 @@ button:hover {
     max-width: 1280px;
     justify-items: center;
     margin: auto;
-    /* gap: 50px */
   }
 
   header {
-    /* padding: 5px 35px; */
     width: 500px;
     margin: auto;
     justify-self: flex-end;
@@ -220,7 +218,7 @@ button:hover {
   }
 
   form {
-    height: 420px;
+    min-height: 420px;
     padding: 30px;
   }
 
