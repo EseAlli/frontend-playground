@@ -1,9 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  --soft-red: hsl(0, 93%, 68%);
+  --desaturated-red: hsl(0, 36%, 70%);
+  --darkish-grayish: hsl(0, 6%, 24%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 header {
-  padding: 20px 15px;
+  padding: 30px;
+}
+
+header img {
+  height: 25px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: minmax(250px, 280px) 1fr;
+  height: 100%;
+  background-color: rgba(206, 151, 151, 0.18);
+}
+
+section.info {
+  order: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-height: 500px;
+}
+
+.info h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.275em;
+  font-weight: 400;
+  margin: 8px auto;
+  color: var(--darkish-grayish);
+}
+
+.info h1 span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+.info p {
+  color: var(--desaturated-red);
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 15px;
+  max-width: 90%;
+  margin: auto;
+  line-height: 1.75rem;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.info div {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.info input {
+  box-shadow: none;
+  inline-size: calc(100% - 65px);
+  background: transparent;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 1px solid var(--desaturated-red);
+}
+
+.info:-ms-input-placeholder {
+  color: var(--desaturated-red);
+}
+
+.info button {
+  margin-left: -70px;
+  border-radius: 25px;
+  height: 50px;
+  inline-size: 65px;
+  /* background-color: var(--soft-red); */
+  background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: none;
+  border: none;
+}
+
+section.hero {
+  background-image: url("./images/hero-mobile.jpg");
+  order: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 250px;
+  height: 100%;
+}
+
+@media (min-width: 990px) {
+  main {
+    grid-template-columns: 2fr minmax(650px, 1fr);
+    grid-template-rows: auto;
+  }
+
+  section.info {
+    order: -1;
+    background-image: url("./images/bg-pattern-desktop.svg");
+  }
+
+  .info button {
+    inline-size: 85px;
+  }
+
+  section.hero {
+    background-image: url("./images//hero-desktop.jpg");
+    height: 100%;
+    width: 100%;
+  }
 }
