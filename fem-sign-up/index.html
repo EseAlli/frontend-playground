@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -30,18 +28,52 @@
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
 
-        <form id="login-form" action="./" method="post">
-          <input id="fname" placeholder="First Name" type="text" required />
-          <p id="error">hey</p>
-          <input id="lname" placeholder="Last Name" type="text" required />
-          <input id="email" placeholder="Email Address" type="email" required />
-          <input
-            id="password"
-            placeholder="Password"
-            type="password"
-            required
-          />
-          <button type="submit">Claim your free trial</button>
+        <form id="login-form">
+          <div class="input-container">
+            <input
+              id="fname"
+              placeholder="First Name"
+              type="text"
+              required
+              name="fname"
+            />
+            <small class="error"></small>
+          </div>
+          <div class="input-container">
+            <input
+              id="lname"
+              placeholder="Last Name"
+              type="text"
+              required
+              name="lname"
+            />
+            <small class="error"></small>
+          </div>
+
+          <div class="input-container">
+            <input
+              id="email"
+              placeholder="Email Address"
+              type="email"
+              required
+              name="email"
+            />
+            <small class="error"></small>
+          </div>
+
+          <div class="input-container">
+            <input
+              id="password"
+              placeholder="Password"
+              type="password"
+              required
+              name="password"
+            />
+            <small class="error"></small>
+          </div>
+          <button type="submit" onclick="validateForm()">
+            Claim your free trial
+          </button>
           <p class="agreement">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
@@ -53,10 +85,27 @@
     <script>
       const loginForm = document.getElementById("login-form");
       loginForm.noValidate = true;
-      loginForm.addEventListener("submit", validateForm);
 
+      const inputs = loginForm.querySelectorAll("input");
       function validateForm() {
-        console.log("ji");
+        event.preventDefault();
+        const inputArr = Array.from(inputs);
+        const arrLen = inputArr.length;
+
+        for (let i = 0; i < arrLen; i++) {
+          console.log(inputArr[i].name);
+          if (inputArr[i].value === "") {
+            let errorTag = inputArr[i].nextElementSibling;
+            if (inputArr[i].name !== "email") {
+              errorTag.innerHTML = `${inputArr[i].placeholder} cannot be empty`;
+            } else {
+              inputArr[i].placeholder = "email@example/com";
+              errorTag.innerHTML = "Looks like this is not an email";
+            }
+            inputArr[i].classList.add("error");
+            errorTag.classList.add("show");
+          }
+        }
       }
     </script>
   </body>
