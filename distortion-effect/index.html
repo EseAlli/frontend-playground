@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Distortion Effect</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="menu">
+          <ion-icon name="ios-menu"></ion-icon>
+        </div>
+        <div class="lang">eng</div>
+        <div class="search">
+          <ion-icon name="ios-search"></ion-icon>
+        </div>
+      </nav>
+
+      <div class="media">
+        <ul>
+          <li>facebook</li>
+          <li>instagram</li>
+          <li>twitter</li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h1>toni&guy</h1>
+        <h2>duality</h2>
+        <h3>
+          collection 2017 <br />
+          duality
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam alias
+          facere provident numquam soluta deserunt, expedita voluptate odit aut.
+          Nobis et reiciendis sequi odit sint facilis quisquam hic soluta
+          laboriosam.
+        </p>
+      </div>
+
+      <div class="sponsor">
+        <img src="./images/sponsor-logo.png" alt="logo" />
+        <p>official sponsor</p>
+      </div>
+
+      <div class="distortion"></div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- hover-effect js -->
+    <script src="./hover-effect.umd.js"></script>
+    <script>
+      new hoverEffect({
+        parent: document.querySelector(".distortion"),
+        intensity: 0.2,
+        image1: "./images/01.png",
+        image2: "./images/02.png",
+        displacementImage: "./images/diss.png",
+        imagesRatio: 380 / 300
+      });
+    </script>
+  </body>
+</html>
