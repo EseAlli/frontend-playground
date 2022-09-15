@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: black;
+  height: 100vh;
+}
+
+img {
+  height: 150px;
+}
+
+.logo {
+  position: relative;
+  animation: move 4s linear backwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translate(-100px);
+  }
+
+  to {
+    transform: translate(75vw, 80vh);
+  }
+}
