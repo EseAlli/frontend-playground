@@ -1,3 +1,8 @@
+:root {
+  --positionX: 75vw;
+  --postionY: 80vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,24 +12,26 @@
 main {
   background-color: black;
   height: 100vh;
+  overflow: hidden;
 }
 
 img {
-  height: 150px;
+  max-height: 150px;
+  min-height: 100px;
 }
 
 .logo {
   position: relative;
-  animation: move 4s linear backwards;
+  animation: move 4s linear alternate;
   animation-iteration-count: infinite;
 }
 
 @keyframes move {
   from {
-    transform: translate(-100px);
+    transform: translate(0px);
   }
 
   to {
-    transform: translate(75vw, 80vh);
+    transform: translate(var(--positionX), var(--postionY));
   }
 }

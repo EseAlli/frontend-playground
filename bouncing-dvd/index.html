@@ -18,16 +18,16 @@
       let logo = document.querySelector(".logo");
       let position = logo.getBoundingClientRect();
       let img = logo.querySelector("img");
-      
-      window.addEventListener("animationend", change);
+      let root = document.documentElement;
+
+      window.addEventListener("animationiteration", change);
       function change() {
-        console.log("hi");
         let randomNum = Math.floor(Math.random() * 5) + 1;
-        let windowHeight = window.innerHeight;
-        let randomLocation = Math.random() * windowHeight;
-        console.log(randomLocation);
+        let randomPos = Math.floor(Math.random() * 100) - position.y;
+        console.log(randomPos, position);
         img.src = `./images/dvdlogo-0${randomNum}.svg  `;
-      }   
+        root.style.setProperty("--positionX", randomPos + "vw");
+      }
     </script>
   </body>
 </html>
