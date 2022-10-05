@@ -138,3 +138,9 @@ section p {
   color: var(--dark-blue);
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  main section {
+    max-width: 400px;
+  }
+}
