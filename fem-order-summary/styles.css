@@ -1,22 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --secondary-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: var(--primary-pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+
 main {
-  background-image: url("./images/pattern-background-mobile.svg");
-  margin: auto 20px;
+  background-image: url("./images/pattern-background-desktop.svg");
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  width: 100%;
 }
 
 section {
-  border-radius: 8px;
+  border-radius: 25px;
   background-color: white;
   text-align: center;
   margin: 50px auto;
-  height: 600px;
+  width: 90%;
+  max-width: 350px;
+}
+
+section img {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+section h1 {
+  margin: 1.25rem auto;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+section p {
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.summary {
+  width: 85%;
+  margin: auto;
+  padding: 0rem 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  background-color: var(--secondary-pale-blue);
+  width: 90%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.75rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.plan div {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.plan img {
+  height: 45px;
+  width: 45px;
+  margin-right: 1.5rem;
+}
+
+.plan div h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.plan a {
+  margin-left: auto;
+  color: var(--bright-blue);
+  font-weight: 900;
+}
+
+.plan a:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.7);
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto auto 1rem auto;
+  gap: 1.25rem;
+}
+
+.btns a {
+  background-color: var(--bright-blue);
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px hsla(245, 75%, 52%, 0.4);
+}
+
+.btns a:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+  cursor: pointer;
+}
+
+.btns button {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.btns button:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
 }
