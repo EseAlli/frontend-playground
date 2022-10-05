@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --primary-dark-blue: hsl(217, 54%, 11%);
+  --secondary-dark-blue: hsl(216, 50%, 16%);
+  --tertiary-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-dark-blue);
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  color: white;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-dark-blue);
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  gap: 1rem;
+  max-width: 350px;
+  border-radius: 20px;
+  position: relative;
+}
+
+main section picture {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+main section picture:hover::after {
+  display: inline-block;
+}
+
+main section picture::after {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  transition: ease-in linear 1s 1s;
+  background-color: hsla(178, 100%, 50%, 0.4);
+  inline-size: 100%;
+  block-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  border-radius: 10px;
+  display: none;
+  top: -4px;
+}
+
+main section picture:hover img:last-of-type {
+  z-index: 1;
+}
+
+main section picture img:first-of-type {
+  border-radius: 10px;
+  width: inherit;
+}
+
+main section picture img:last-of-type {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  z-index: -1;
+}
+
+main section h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+main section h4:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+main section p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: var(--soft-blue);
+  opacity: 0.8;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details img {
+  margin-bottom: 0;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: 8px;
+}
+
+.details p:first-of-type {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+main section hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--tertiary-dark-blue);
+}
+
+main section div:last-of-type {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main section div:last-of-type img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+main section div:last-of-type span {
+  color: var(--white);
+}
+
+main section div:last-of-type span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}

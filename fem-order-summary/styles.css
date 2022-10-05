@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("./images/pattern-background-mobile.svg");
+  margin: auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+  margin: 50px auto;
+  height: 600px;
+}
