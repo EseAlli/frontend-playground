@@ -55,7 +55,6 @@ main section picture::after {
   content: "";
   position: absolute;
   z-index: 6;
-  transition: ease-in linear 1s 1s;
   background-color: hsla(178, 100%, 50%, 0.4);
   inline-size: 100%;
   block-size: 100%;
@@ -65,6 +64,7 @@ main section picture::after {
   border-radius: 10px;
   display: none;
   top: -4px;
+  transition: all ease-in 0.5s;
 }
 
 main section picture:hover img:last-of-type {
@@ -83,14 +83,15 @@ main section picture img:last-of-type {
   z-index: -1;
 }
 
-main section h4 {
+main section h1 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-main section h4:hover {
+main section h1:hover {
   color: var(--cyan);
   cursor: pointer;
+  transition: all ease-in 0.5s;
 }
 
 main section p {
@@ -148,4 +149,5 @@ main section div:last-of-type span {
 main section div:last-of-type span:hover {
   color: var(--cyan);
   cursor: pointer;
+  transition: all ease-in 0.5s;
 }
