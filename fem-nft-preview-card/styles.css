@@ -135,8 +135,10 @@ main section div:last-of-type {
 }
 
 main section div:last-of-type img {
-  height: 50px;
+  height: 30px;
   vertical-align: middle;
+  border: 1px solid var(--white);
+  border-radius: 9999px;
 }
 
 main section div:last-of-type span {
