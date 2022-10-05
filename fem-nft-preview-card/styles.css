@@ -84,7 +84,7 @@ main section picture img:last-of-type {
 }
 
 main section h4 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -106,10 +106,14 @@ main section p {
   align-items: center;
 }
 
+.details p {
+  display: flex;
+  gap: 8px;
+}
+
 .details img {
-  margin-bottom: 0;
   vertical-align: -webkit-baseline-middle;
-  margin-right: 8px;
+  object-fit: contain;
 }
 
 .details p:first-of-type {
