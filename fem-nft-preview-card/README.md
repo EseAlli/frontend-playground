@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/EseAlli/frontend-playground/tree/main/fem-nft-preview-card)
-- Live Site URL: [Add live site URL here](https://esealli.github.io/frontend-playground/fem-nft-preview-card)
+- Solution URL: [https://github.com/EseAlli/frontend-playground/tree/main/fem-nft-preview-card](https://github.com/EseAlli/frontend-playground/tree/main/fem-nft-preview-card)
+- Live Site URL: [https://esealli.github.io/frontend-playground/fem-nft-preview-card/](https://esealli.github.io/frontend-playground/fem-nft-preview-card)
 
 ## My process
 
