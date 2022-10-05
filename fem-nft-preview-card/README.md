@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://esealli.github.io/frontend-playground/fem-nft-previw-card)
+- Solution URL: [Add solution URL here](https://github.com/EseAlli/frontend-playground/tree/main/fem-nft-preview-card)
+- Live Site URL: [Add live site URL here](https://esealli.github.io/frontend-playground/fem-nft-preview-card)
 
 ## My process
 
@@ -47,4 +47,4 @@ You cannot use CSS ::after on the image tag because img is a void element and it
 ## Author
 
 - Website - [Eseoghene Alli](https://esealli.github.io/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/EseAlli)
+- Frontend Mentor - [@EseAlli](https://www.frontendmentor.io/profile/EseAlli)
