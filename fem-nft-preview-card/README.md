@@ -47,4 +47,4 @@ You cannot use CSS ::after on the image tag because img is a void element and it
 ## Author
 
 - Website - [Eseoghene Alli](https://esealli.github.io/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/EseAlli)
+- Frontend Mentor - [@EseAlli](https://www.frontendmentor.io/profile/EseAlli)
