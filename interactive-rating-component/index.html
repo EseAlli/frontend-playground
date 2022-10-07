@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <section class="rating">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="star-icon" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rates">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+        </div>
+        <button class="submit">Submit</button>
+      </section>
+
+      <section class="thanks">
+        <img src="./images/illustration-thank-you.svg" alt="thanks" />
+        <p class="selected">You selected <span class="rate"></span> out of 5</p>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const rates = Array.from(document.querySelectorAll(".rates button"));
+      const ratingModal = document.querySelector(".rating");
+      const submit = document.querySelector(".submit");
+      const thanks = document.querySelector(".thanks");
+      const selectedRate = document.querySelector(".rate");
+
+      rates.forEach((rate) => {
+        rate.addEventListener("click", function () {
+          selectedRate.innerHTML = rate.innerHTML;
+        });
+      });
+
+      function submitRating() {
+        if (selectedRate.innerHTML !== "") {
+          ratingModal.style.display = "none";
+          thanks.style.display = "flex";
+        }
+      }
+
+      submit.addEventListener("click", submitRating);
+    </script>
+  </body>
+</html>
