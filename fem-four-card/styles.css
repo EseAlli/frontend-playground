@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --gray-ish: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 85%;
+  max-width: 1280px;
+  margin: 3rem 0;
+}
+
+header {
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+header span {
+  font-weight: 200;
+}
+
+header p {
+  color: var(--gray-ish);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 5rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px hsla(234, 26%, 62%, 0.3);
+  padding: 1rem 1.5rem;
+  width: 90%;
+}
+
+.cards h2 {
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+}
+
+.cards p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--gray-ish);
+}
+
+.cards img {
+  height: 50px;
+  object-fit: contain;
+  align-self: flex-end;
+  margin: 1rem 0;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.supervisor {
+  border-top: 4px solid var(--primary-cyan);
+}
+
+.team-builder {
+  border-top: 4px solid var(--primary-red);
+}
+
+.karma {
+  border-top: 4px solid var(--primary-orange);
+}
+
+.calc {
+  border-top: 4px solid var(--primary-blue);
+}
+
+@media (min-width: 1280px) {
+  main {
+    margin: 2.5rem auto;
+  }
+  .cards {
+    flex-direction: row;
+    margin: 2.75rem 0;
+    gap: 0.75rem;
+  }
+
+  .card {
+    padding: 1.75rem;
+    max-width: 380px;
+  }
+
+  .card img {
+    margin: 3rem 0rem 0rem 0rem;
+  }
+}
