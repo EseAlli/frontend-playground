@@ -10,6 +10,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -36,6 +37,10 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Flex
+
+### What I learned
+
+Heading levels should only increase by one. After using an h1 the next header to use should be an h2 instead of an h3
 
 ## Author
 
