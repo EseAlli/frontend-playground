@@ -52,12 +52,16 @@ header p {
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "supervisor"
+    "team"
+    "karma"
+    "calculator";
+  row-gap: 1.75rem;
   margin: 5rem auto;
-  align-items: center;
-  justify-content: center;
 }
 
 .card {
@@ -66,7 +70,7 @@ header p {
   border-radius: 8px;
   box-shadow: 0 8px 24px hsla(234, 26%, 62%, 0.3);
   padding: 1rem 1.5rem;
-  width: 90%;
+  width: 100%;
 }
 
 .cards h2 {
@@ -97,18 +101,38 @@ header p {
 
 .supervisor {
   border-top: 4px solid var(--primary-cyan);
+  grid-area: supervisor;
+  align-self: center;
 }
 
 .team-builder {
   border-top: 4px solid var(--primary-red);
+  grid-area: team;
 }
 
 .karma {
   border-top: 4px solid var(--primary-orange);
+  grid-area: karma;
 }
 
 .calc {
   border-top: 4px solid var(--primary-blue);
+  grid-area: calculator;
+  align-self: center;
+}
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "supervisor team calculator"
+      "supervisor karma calculator";
+  }
+
+  .card {
+    width: 95%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -123,7 +147,6 @@ header p {
   .cards {
     flex-direction: row;
     margin: 2.5rem 0;
-    gap: 0.75rem;
   }
 
   .card {
