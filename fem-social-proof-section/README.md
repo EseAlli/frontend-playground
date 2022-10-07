@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/EseAlli/frontend-playground/tree/main/fem-social-prof-section](https://github.com/EseAlli/frontend-playground/tree/main/fem-social-prof-section)
-- Live Site URL: [https://esealli.github.io/frontend-playground/fem-social-prof-section/](https://esealli.github.io/frontend-playground/fem-social-prof-section)
+- Solution URL: [https://github.com/EseAlli/frontend-playground/tree/main/fem-social-prof-section](https://github.com/EseAlli/frontend-playground/tree/main/fem-social-proof-section)
+- Live Site URL: [https://esealli.github.io/frontend-playground/fem-social-prof-section/](https://esealli.github.io/frontend-playground/fem-social-proof-section)
 
 ## My process
 
