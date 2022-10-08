@@ -27,6 +27,7 @@ body {
 
 main {
   width: 90%;
+  max-width: 600px;
 }
 
 header {
@@ -72,9 +73,22 @@ header p {
   border: 1.5px solid var(--pale-blue);
 }
 
+.subscribe small {
+  color: var(--light-red);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 10px;
+  margin-bottom: 1rem;
+  display: none;
+}
+
 input::placeholder {
   color: var(--dark-gray);
   opacity: 0.5;
+}
+
+.subscribe div {
+  width: 100%;
 }
 
 .subscribe button {
@@ -84,6 +98,11 @@ input::placeholder {
   color: white;
   font-weight: 600;
   border: none;
+}
+
+.subscribe button:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .dashboard-image {
@@ -113,12 +132,56 @@ ul li {
   border-radius: 50%;
 }
 
-.icon-inner {
-  color: var(--primary-blue);
+ul li:hover {
+  background-color: var(--primary-blue);
+  cursor: pointer;
+}
+
+ul li:hover .icon-inner {
+  color: white;
 }
 
 footer p {
   font-size: 12px;
   color: var(--primary-gray);
   font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .subscribe {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .subscribe small {
+    margin-left: 10px;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .subscribe button {
+    width: 30%;
+  }
+
+  .dashboard-image {
+    margin: 3.5rem auto 2rem auto;
+  }
+
+  ul {
+    margin: 1.25rem auto;
+  }
 }
