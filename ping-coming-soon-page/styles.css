@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --primary-gray: hsl(0, 0%, 59%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --dark-blue: hsl(209, 33%, 12%);
+  --primary-blue: hsl(223, 87%, 63%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 90%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header img {
+  margin: 1.75rem auto;
+}
+
+header h1 {
+  font-size: 20px;
+  color: var(--primary-gray);
+}
+
+header p {
+  margin: 1rem auto;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.subscribe input {
+  padding: 0.75rem;
+  inline-size: 100%;
+  border-radius: 25px;
+}
+
+.subscribe button {
+  padding: 0.75rem 0;
+  border-radius: 25px;
+}
+
+.dashboard-image {
+  margin: 3.5rem auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+ul li {
+  border: 1px solid var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+}
