@@ -87,6 +87,14 @@ hr {
 .label::after {
   content: url(./images/icon-arrow-down.svg);
   block-size: 100%;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.active.label::after {
+  transform: rotate(180deg);
 }
 
 .illustration-container {
