@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/EseAlli/frontend-playground/tree/main/fem-accordion-card-main](https://github.com/EseAlli/frontend-playground/tree/main/fem-accordion-card-main)
-- Live Site URL: [https://esealli.github.io/frontend-playground/fem-accordion-card-main/](https://esealli.github.io/frontend-playground/fem-accordion-card-main)
+- Solution URL: [https://github.com/EseAlli/frontend-playground/tree/main/fem-accordion-card-main](https://github.com/EseAlli/frontend-playground/tree/main/faq-accordion-card-main)
+- Live Site URL: [https://esealli.github.io/frontend-playground/fem-accordion-card-main/](https://esealli.github.io/frontend-playground/faq-accordion-card-main/)
 
 ## My process
 
