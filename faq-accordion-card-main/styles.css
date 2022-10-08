@@ -51,29 +51,29 @@ source {
   display: block;
 }
 
-article {
+ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
 }
 
-article:hover {
+ul:hover {
   cursor: pointer;
 }
 
-article:hover p {
+ul:hover p {
   color: var(--soft-red);
 }
 
-p {
+li {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
   color: var(--primary-grayish-blue);
 }
 
-p.active {
+li.active {
   font-weight: 700;
 }
 
@@ -153,7 +153,7 @@ picture .shadow {
     margin: 1rem 0;
   }
 
-  article {
+  ul {
     width: 85%;
   }
 
