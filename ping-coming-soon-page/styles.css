@@ -122,7 +122,7 @@ ul {
   gap: 1rem;
 }
 
-ul li {
+ul li a {
   border: 1px solid var(--pale-blue);
   display: flex;
   justify-content: center;
@@ -132,13 +132,10 @@ ul li {
   border-radius: 50%;
 }
 
-ul li:hover {
+ul li a:hover {
   background-color: var(--primary-blue);
   cursor: pointer;
-}
-
-ul li:hover .icon-inner {
-  color: white;
+  --ion-color-secondary: white;
 }
 
 footer p {
