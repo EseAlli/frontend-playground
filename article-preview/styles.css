@@ -92,7 +92,15 @@ ul li {
   border-radius: 50%;
   border: none;
   padding: 0.4rem;
-  background-color: var(--secondary-grayish-blue);
+  background-color: var(--primary-grayish-blue);
+}
+
+.bottom button:hover {
+  cursor: pointer;
+}
+
+.share.bottom button img {
+  filter: brightness(0) invert(1);
 }
 
 .share .author {
@@ -128,4 +136,66 @@ ul li {
 
 .share .share-div {
   display: flex;
+}
+
+@media (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-areas: "img content" "img share";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 150px 120px;
+    max-width: 750px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .drawers {
+    grid-area: img;
+    max-height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    height: -webkit-fill-available;
+  }
+
+  section {
+    grid-area: content;
+  }
+
+  .bottom {
+    grid-area: share;
+    margin-top: 1rem;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .bottom.share {
+    background-color: transparent;
+  }
+
+  .share .author {
+    display: flex;
+  }
+
+  .share .share-div {
+    position: absolute;
+    background-color: var(--primary-dark-blue);
+    right: -4.25rem;
+    top: -1.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 5px 35px var(--secondary-grayish-blue);
+  }
+
+  .share-div::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    height: 20px;
+    width: 20px;
+    margin: 0 30%;
+    background: var(--primary-dark-blue);
+    transform: rotate(45deg);
+  }
 }
