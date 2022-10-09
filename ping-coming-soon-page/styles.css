@@ -73,7 +73,15 @@ header p {
   border: 1.5px solid var(--pale-blue);
 }
 
-.subscribe small {
+.subscribe .invalid {
+  border-color: var(--light-red);
+}
+
+.invalid + small {
+  display: block;
+}
+
+small {
   color: var(--light-red);
   font-style: italic;
   font-weight: 600;
@@ -98,6 +106,7 @@ input::placeholder {
   color: white;
   font-weight: 600;
   border: none;
+  align-self: baseline;
 }
 
 .subscribe button:hover {
