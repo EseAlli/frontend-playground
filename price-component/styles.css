@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-yellow: hsl(71, 73%, 54%);
+  --primary-gray: hsl(204, 43%, 93%);
+  --secondary-gray: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-gray);
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "community" "sub" "why";
+  width: 90%;
+  max-width: 350px;
+}
+
+section {
+  padding: 1rem 1.25rem;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+h2 {
+  margin: 1.25rem 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.community {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.community h1 {
+  color: var(--primary-cyan);
+}
+
+.community h2 {
+  color: var(--primary-yellow);
+  font-size: 1.125rem;
+}
+
+.community p {
+  color: var(--secondary-gray);
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.sub {
+  background-color: var(--primary-cyan);
+  color: white;
+}
+
+.sub h2 {
+  font-size: 2rem;
+  margin: 0.75rem 0;
+}
+
+.sub h2 span {
+  font-size: 1rem;
+  color: var(--primary-gray);
+  font-weight: 400;
+}
+
+.sub a {
+  background-color: var(--primary-yellow);
+  color: white;
+  inline-size: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.why {
+  background-color: hsla(179, 62%, 43%, 0.7);
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.why ul {
+  margin-bottom: 1rem;
+}
+
+.why li {
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-areas: "community community" "sub why";
+  }
+}
