@@ -11,14 +11,64 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <main>
+      <img src="./images/drawers.jpg" alt="drawers" class="drawers" />
+      <section>
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </section>
+      <div class="bottom">
+        <div class="author">
+          <img src="./images/avatar-michelle.jpg" />
+          <div>
+            <p class="name">Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <div class="share-div">
+          <p>Share</p>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images//icon-twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-pinterest.svg" alt="pinterest" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button>
+          <img src="./images/icon-share.svg" alt="share" />
+        </button>
+      </div>
+    </main>
+    <script>
+      let btn = document.querySelector("button");
+      let cardBottom = document.querySelector(".bottom");
+      let author = document.querySelector(".author");
+      let shareDiv = document.querySelector(".share-div");
+      btn.addEventListener("click", () => {
+        cardBottom.classList.add("share");
+      });
+    </script>
   </body>
 </html>
