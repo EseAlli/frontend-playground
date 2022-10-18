@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --primary-white: hsl(0, 0%, 100%);
+  --primary-red: hsl(1, 90%, 64%);
+  --primary-blue: hsl(219, 85%, 26%);
+  --primary-light-grayish-blue: hsl(210, 60%, 98%);
+  --secondary-light-grayish-blue: hsl(211, 68%, 94%);
+  --tertiary-light-grayish-blue: hsl(205, 33%, 90%);
+  --primary-grayish-blue: hsl(219, 14%, 63%);
+  --secondary-grayish-blue: hsl(219, 12%, 42%);
+  --primary-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  background-color: var(--primary-light-grayish-blue);
+}
+
+section {
+  background-color: white;
+  padding: 0.25rem 1rem;
+}
+
+img {
+  height: 2.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.header span {
+  background-color: var(--primary-blue);
+  display: inline-block;
+  color: var(--primary-white);
+  font-size: 1.125rem;
+  padding: 0.125rem 0.75rem;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+}
+
+.notification {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+
+.unread {
+  background-color: var(--primary-light-grayish-blue);
+  border-radius: 1rem;
+}
+
+.unread .msg::after {
+  content: "";
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.msg {
+  color: var(--primary-dark-blue)
+
+.name {
+  color: var(--primary-dark-blue);
+  font-weight: 800;
+}
+
+.post {
+  color: var(--secondary-grayish-blue);
+  font-weight: 500;
+}
+
+.time {
+  color: var(--primary-grayish-blue);
+  font-size: 0.85rem;
+}
