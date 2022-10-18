@@ -15,4 +15,106 @@
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-cyan);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: right 35vw bottom 45vh, left 33vw top 45vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  max-inline-size: 350px;
+  box-shadow: 0 0.5rem 1.25rem 0 hsl(0deg 0% 10% / 40%);
+}
+
+h2 {
+  color: var(--primary-blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h2 span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--grayish-blue);
+  margin-left: 0.25rem;
+}
+
+p {
+  color: var(--primary-gray);
+  margin: 0.35rem 0;
+  font-weight: 500;
+}
+
+.pattern {
+  width: 100%;
+}
+
+.pattern img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.avatar {
+  height: 6rem;
+  object-fit: contain;
+  border: 5px solid white;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  margin: -3.25rem 0 1.5rem 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--primary-gray);
+  opacity: 0.4;
+}
+
+.details {
+  display: flex;
+  margin: 1.5rem 0;
+  justify-content: space-evenly;
+  align-self: stretch;
+  text-align: center;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.details p {
+  font-size: 0.75rem;
+  letter-spacing: 0.075rem;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-position: right 45vw bottom 50vh, left 45vw top 60vh;
+  }
 }
