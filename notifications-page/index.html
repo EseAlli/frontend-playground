@@ -19,7 +19,7 @@
       <section>
         <div class="header">
           <h1>Notifications <span>3</span></h1>
-          <p>Mark all as read</p>
+          <p class="mark">Mark all as read</p>
         </div>
         <div class="notification unread">
           <img
@@ -28,8 +28,9 @@
           />
           <div>
             <p class="msg">
-              <span class="name">Mark Webber</span> reacted to your recent post
-              <span class="post">My first tournament today!</span>
+              <a class="name" href="#" href="#">Mark Webber</a> reacted to your
+              recent post
+              <a class="post" href="#">My first tournament today!</a>
             </p>
             <p class="time">1m ago</p>
           </div>
@@ -41,7 +42,7 @@
           />
           <div>
             <p class="msg">
-              <span class="name">Angela Gray</span> followed you
+              <a class="name" href="#">Angela Gray</a> followed you
             </p>
             <p class="time">5m ago</p>
           </div>
@@ -53,8 +54,8 @@
           />
           <div>
             <p class="msg">
-              <span class="name">Jacob Thompson</span> has joined your group
-              <span>Chess Club</span>
+              <a class="name" href="#">Jacob Thompson</a> has joined your group
+              <a class="group" href="#">Chess Club</a>
             </p>
             <p class="time">1 day ago</p>
           </div>
@@ -66,11 +67,11 @@
           />
           <div>
             <p class="msg">
-              <span class="name">Rizky Hasanuddin</span> sent you a private
+              <a class="name" href="#">Rizky Hasanuddin</a> sent you a private
               message
             </p>
             <p class="time">5 days ago</p>
-            <p>
+            <p class="message">
               Hello, thanks for setting up the Chess Club. I've been a member
               for a few weeks now and I'm already having lots of fun and
               improving my game.
@@ -82,12 +83,16 @@
             src="./assets/images/avatar-kimberly-smith.webp"
             alt="avatar-kimberly"
           />
-          <div>
+          <div class="comment">
             <p class="msg">
-              <span class="name">Kimberly Smith</span> commented on your picture
+              <a class="name" href="#">Kimberly Smith</a> commented on your
+              picture
             </p>
             <p class="time">1 week ago</p>
           </div>
+          <a class="picture" href="#">
+            <img src="./assets/images/image-chess.webp" alt="chess-photo" />
+          </a>
         </div>
         <div class="notification">
           <img
@@ -96,9 +101,11 @@
           />
           <div>
             <p class="msg">
-              <span class="name">Nathan Peterson</span> reacted to your recent
-              post
-              <span>5 end-game strategies to increase your win rate </span>
+              <a class="name" href="#">Nathan Peterson</a> reacted to your
+              recent post
+              <a class="post" href="#"
+                >5 end-game strategies to increase your win rate
+              </a>
             </p>
             <p class="time">2 weeks ago</p>
           </div>
@@ -107,8 +114,8 @@
           <img src="./assets/images/avatar-anna-kim.webp" alt="anna-kim" />
           <div>
             <p class="msg">
-              <span class="name">Anna Kim</span> left the group
-              <span>Chess Club</span>
+              <a class="name" href="#">Anna Kim</a> left the group
+              <a class="group" href="#">Chess Club</a>
             </p>
             <p class="time">2 weeks ago</p>
           </div>
