@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/notifictaions-page-c9cl-FBIql](https://www.frontendmentor.io/solutions/notifictaions-page-c9cl-FBIql)
+- Live Site URL: [https://esealli.github.io/frontend-playground/notifications-page/](https://esealli.github.io/frontend-playground/notifications-page/)
 
 ## My process
 
